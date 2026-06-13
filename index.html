@@ -135,9 +135,9 @@ var INJECTED_DATA = {"folders":[{"id":"folder_17813434599630.4293241426485991","
 <body>
 
     <div class="top-nav-actions">
-        <button class="outline-btn danger-btn" id="navClosePlayerBtn" onclick="closePlayer()" style="display: none;">✖ إغلاق المشغل</button>
+        <button class="outline-btn danger-btn" id="navClosePlayerBtn" onclick="closePlayer()" style="display: none;">✖ </button>
         <button class="outline-btn action-btn" id="theaterModeBtn" onclick="toggleTheaterMode()" style="display: none;">🎬 وضع السينما</button>
-        <button class="outline-btn action-btn" id="navRefreshPlayerBtn" onclick="refreshPlayer()" style="display: none;">🔄 ريفريش</button>
+        <button class="outline-btn action-btn" id="navRefreshPlayerBtn" onclick="refreshPlayer()" style="display: none;">🔄 </button>
         
         <button class="outline-btn success-btn" onclick="downloadAsHTML()">💾 تحميل ملف HTML (آمن)</button>
         <button class="outline-btn action-btn" onclick="triggerM3UImport()">📥 استيراد m3u8</button>
@@ -696,7 +696,7 @@ var INJECTED_DATA = {"folders":[{"id":"folder_17813434599630.4293241426485991","
             document.body.classList.toggle('theater-active');
             const btn = document.getElementById('theaterModeBtn');
             if (document.body.classList.contains('theater-active')) {
-                btn.innerText = '🔙 إلغاء السينما'; window.scrollTo(0, 0); 
+                btn.innerText = '🔙 '; window.scrollTo(0, 0); 
             } else { btn.innerText = '🎬 وضع السينما'; }
         }
 
